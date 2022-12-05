@@ -52,7 +52,7 @@ int is_palindrome(listint_t **head)
 		tmp = tmp->next;
 
 	if ((size % 2) == 0 && tmp->n != tmp->next->n)
-		retutn (0);
+		return (0);
 
 	tmp = tmp->next->next;
 	rev = reverse_listint(&tmp);
